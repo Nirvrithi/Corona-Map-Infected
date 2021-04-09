@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>CovidMap</title>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
+        <link href="style.css" rel='stylesheet'>
+    </head>
+    <body>
+        <div id='map'></div>
+        <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZWxla3Ryb2JvbHR6IiwiYSI6ImNrbjFqazJ3ejB5Y3EydnQ3NXFxc280aHIifQ.r6JSHF3ZOBhTKMMpnGppDQ';
+        var map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/streets-v11', // style URL
+        center: [-74.5, 40], // starting position [lng, lat]
+        zoom: 0 // starting zoom
+        });
+        </script>
+        <script src='script.js'></script>
+    </body>
+</html>
